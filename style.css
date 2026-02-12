@@ -819,5 +819,49 @@ footer {
         text-align: center;
     }
 }
+/* --- MOBILE HEADER FIXES (Paste at the bottom of style.css) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Fix Header Spacing */
+    nav {
+        padding: 10px 15px !important; 
+        justify-content: flex-end; 
+    }
+
+    /* 2. Resize the Logo (Text & Image) */
+    .logo {
+        font-size: 1.1rem !important; 
+        margin-right: auto; 
+        order: 1; 
+    }
+    
+    .logo img {
+        height: 35px !important; 
+        width: auto;
+    }
+
+    /* 3. Make 'Book Now' Button Compact */
+    .cta-button {
+        padding: 6px 14px !important; 
+        font-size: 0.85rem !important; 
+        border-radius: 20px;
+        order: 2; 
+        white-space: nowrap; 
+    }
+
+    /* 4. Fix Mobile Menu Icon Alignment */
+    .mobile-menu {
+        display: block !important;
+        font-size: 1.4rem !important; 
+        margin-left: 12px; 
+        order: 3; 
+        cursor: pointer;
+    }
+    
+    /* Color for the menu icon */
+    .mobile-menu i {
+        color: #2d3748; 
+    }
+}
 
 
