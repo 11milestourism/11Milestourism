@@ -764,14 +764,11 @@ footer {
     transform: translateY(-2px);
 }
 
-/* Mobile Responsiveness */
+/* --- MOBILE RESPONSIVENESS FIXES (Combined & Cleaned) --- */
 @media (max-width: 768px) {
+    /* 1. Basic Structure */
     .nav-links {
-        display: none;
-    }
-    
-    .mobile-menu {
-        display: block;
+        display: none; /* Hide desktop links */
     }
     
     .hero-buttons {
@@ -779,16 +776,12 @@ footer {
         align-items: center;
     }
     
-    .btn-primary,
-    .btn-secondary {
+    .btn-primary, .btn-secondary {
         width: 100%;
         max-width: 300px;
     }
     
-    .features-grid,
-    .packages-grid,
-    .testimonials-grid,
-    .blog-grid {
+    .features-grid, .packages-grid, .testimonials-grid, .blog-grid {
         grid-template-columns: 1fr;
     }
     
@@ -803,9 +796,42 @@ footer {
     .booking-popup {
         padding: 2rem;
     }
-    
+
+    /* 2. Header & Navigation Fixes */
     nav {
-        padding: 1rem;
+        padding: 10px 15px !important;
+        justify-content: flex-end; /* Helps align right */
+    }
+
+    /* Logo Fix */
+    .logo {
+        font-size: 1.1rem !important;
+        margin-right: auto; /* Pushes everything else to the right */
+        order: 1; /* First item */
+    }
+    .logo img {
+        height: 35px !important;
+        width: auto;
+    }
+
+    /* Compact 'Book Now' Button */
+    .cta-button {
+        padding: 6px 14px !important;
+        font-size: 0.85rem !important;
+        border-radius: 20px;
+        order: 2; /* Second item */
+        white-space: nowrap;
+        margin-left: 10px;
+    }
+
+    /* Mobile Menu Icon Fix */
+    .mobile-menu {
+        display: block !important;
+        font-size: 1.4rem !important;
+        margin-left: 10px;
+        order: 3; /* Third item */
+        color: #2d3748;
+        cursor: pointer;
     }
 }
 
@@ -819,49 +845,3 @@ footer {
         text-align: center;
     }
 }
-/* --- MOBILE HEADER FIXES (Paste at the bottom of style.css) --- */
-@media (max-width: 768px) {
-    
-    /* 1. Fix Header Spacing */
-    nav {
-        padding: 10px 15px !important; 
-        justify-content: flex-end; 
-    }
-
-    /* 2. Resize the Logo (Text & Image) */
-    .logo {
-        font-size: 1.1rem !important; 
-        margin-right: auto; 
-        order: 1; 
-    }
-    
-    .logo img {
-        height: 35px !important; 
-        width: auto;
-    }
-
-    /* 3. Make 'Book Now' Button Compact */
-    .cta-button {
-        padding: 6px 14px !important; 
-        font-size: 0.85rem !important; 
-        border-radius: 20px;
-        order: 2; 
-        white-space: nowrap; 
-    }
-
-    /* 4. Fix Mobile Menu Icon Alignment */
-    .mobile-menu {
-        display: block !important;
-        font-size: 1.4rem !important; 
-        margin-left: 12px; 
-        order: 3; 
-        cursor: pointer;
-    }
-    
-    /* Color for the menu icon */
-    .mobile-menu i {
-        color: #2d3748; 
-    }
-}
-
-
