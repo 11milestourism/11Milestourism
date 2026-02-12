@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 miles | Your Travel Partner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../Desktop/WhatsApp Image 2026-02-11 at 7.19.46 PM.jpeg" alt="11 Miles" style="height: 70px; width: auto;">
+                11 MILES
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <img src="logo.png" alt="11 Miles">
+            </div>
+            <a href="#" class="cta-button" onclick="openBookingPopup()">Book Now</a>
+            
+            <div class="nav-mobile">
+                <a href="#home">Home</a>
+                <a href="#packages">Packages</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>11 Miles</h1>
+            <p>"The world is wide, and your journey begins here. Discover hidden gems and iconic landmarks with 11 Miles where every itinerary is a masterpiece of culture, comfort, and wonder"</p>
+            <div class="hero-buttons">
+                <a href="#packages" class="btn-primary">Explore Packages</a>
+                <a href="#about" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose 11 Miles</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-mountain feature-icon"></i>
+                    <h3>Expert Guide</h3>
+                    <p>Our dedicated travel specialists bring years of industry expertise to every itinerary.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3>Safety First</h3>
+                    <p>We prioritize your safety with top-tier equipment and comprehensive training.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gem feature-icon"></i>
+                    <h3>Premium Experience</h3>
+                    <p>From luxury base camps to helicopter transfers, we provide premium amenities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="packages" id="packages">
+        <div class="container">
+            <h2 class="section-title">Featured Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-badge">Popular</div>
+                    <div class="package-image" onclick="openBookingPopup('everest-base-camp')" style="cursor: pointer;">
+                        <img src="https://ayodhyavaranasitourism.com/wp-content/uploads/elementor/thumbs/Ayodhya-Varanasi-Tour-Package-Details-r6gz03vg912vvvaaj4o3346dfoudub9ickikgln348.webp" alt="Varanasi Tour">
+                    </div>
+                    <div class="package-content">
+                        <div class="package-price">31500</div>
+                        <div class="package-title">VARANASI</div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 3 Nights / 4 Days</li>
+                            <li><i class="fas fa-check"></i> Meals included</li>
+                            <li><i class="fas fa-check"></i> Flight included</li>
+                            <li><i class="fas fa-check"></i> Luxury experience</li>
+                        </ul>
+                        <button class="package-btn" onclick="openBookingPopup('everest-base-camp')">Book This Package</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Adventures Trips</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image" onclick="openBookingPopup('scuba')" style="cursor: pointer;">
+                        <img src="https://avathioutdoors.gumlet.io/live/scuba%20dive9_42315.jpg?q=80&upscale=true&w=1000&h=600&format=webp&compress=true" alt="Scuba Diving">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 10, 2026</span>
+                            <span><i class="fas fa-user"></i> Scuba Diving</span>
+                        </div>
+                        <h3 class="blog-title">Scuba Diving in Netrani Island</h3>
+                        <p class="blog-excerpt">Diving into the crystal-clear waters of Netrani Island is a journey into an underwater paradise...</p>
+                        <a href="javascript:void(0)" class="blog-link" onclick="openBookingPopup('scuba')">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image" onclick="openBookingPopup('everest-helicopter')" style="cursor: pointer;">
+                        <img src="https://vietnamtour.in/wp-content/uploads/VNIN_Cities-to-visit-in-Vietnam-min.jpg" alt="Vietnam">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Nov 05, 2026</span>
+                            <span><i class="fas fa-user"></i> Vietnam</span>
+                        </div>
+                        <h3 class="blog-title">The Timeless Traditions of Vietnam</h3>
+                        <p class="blog-excerpt">Beyond the stunning landscapes lies a culture built on thousands of years of history...</p>
+                        <a href="javascript:void(0)" class="blog-link" onclick="openBookingPopup('everest-helicopter')">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image" onclick="openBookingPopup('annapurna-circuit')" style="cursor: pointer;">
+                        <img src="https://www.indianholiday.com/wordpress/wp-content/uploads/2017/12/pelling.jpg" alt="North East">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 5, 2026</span>
+                            <span><i class="fas fa-user"></i> North East India</span>
+                        </div>
+                        <h3 class="blog-title">Essential Gear Guide for North East India</h3>
+                        <p class="blog-excerpt">Packing for the Seven Sisters is about balance. From the wettest trails in Cherrapunjee...</p>
+                        <a href="javascript:void(0)" class="blog-link" onclick="openBookingPopup('annapurna-circuit')">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>11 Miles</h3>
+                    <p>"Seamless, soulful darshan in the land of Lord Rama. Expertly guided journeys to hidden misty hills..."</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/KA26_MEMES" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Begur Road, Bangalore - 560068</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+919886544774" style="color:inherit;">+91 9886544774</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+919739200928" style="color:inherit;">+91 9739200928</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:11milestourism@gmail.com" style="color:inherit;">11milestourism@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom" style="text-align: center; white-space: nowrap; padding-top: 20px;">
+                <p>&copy; 2026 11 Miles. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="booking-overlay" id="bookingOverlay">
+        <div class="booking-popup">
+            <button class="close-popup" onclick="closeBookingPopup()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <form class="booking-form" onsubmit="handleBookingSubmit(event)">
+                <h3>Book Your Adventure</h3>
+                <div class="form-group">
+                    <label for="package">Selected Package</label>
+                    <select id="package" name="package" required>
+                        <option value="">Choose a package</option>
+                        <option value="everest-base-camp">Ayodhya - 32000</option>
+                        <option value="annapurna-circuit">North East India - 50000</option>
+                        <option value="everest-helicopter">Vietnam - 105000</option>
+                        <option value="scuba">Scuba Diving Netrani - 5000</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group"><label>First Name</label><input type="text" required></div>
+                    <div class="form-group"><label>Last Name</label><input type="text" required></div>
+                </div>
+                <div class="form-group"><label>Email Address</label><input type="email" required></div>
+                <div class="form-group"><label>Phone Number</label><input type="tel" required></div>
+                <div class="form-group"><label>Travel Date</label><input type="date" required></div>
+                <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Submit Booking Request</button>
+            </form>
+
+            <div id="payment-section" style="display: none; text-align: center; padding: 20px;">
+                <i class="fas fa-check-circle" style="color: #28a745; font-size: 50px; margin-bottom: 15px;"></i>
+                <h3>Booking Received!</h3>
+                <p>To confirm your seat for <strong id="selected-package-name">the trip</strong>, please pay the booking advance.</p>
+                
+                <div style="background: white; padding: 10px; display: inline-block; margin: 15px 0; border: 1px solid #ddd; border-radius: 10px;">
+    <img src="payment-qr.jpg" alt="Scan to Pay 11 Miles" style="width: 180px; height: 180px;">
+</div>
+                <p style="font-size: 14px; color: #666;">UPI ID: <strong>venkateshshantharajusvs@okicici</strong></p>
+                
+                <button id="pay-btn" onclick="simulatePaymentCheck()" class="submit-btn" style="background-color: #333; margin-top: 10px;">
+                    <i class="fas fa-check"></i> <span id="pay-btn-text">I Have Paid</span>
+                </button>
+            </div>
+
+            <div id="success-message" style="display: none; text-align: center; padding: 30px;">
+                <i class="fas fa-check-circle" style="color: #28a745; font-size: 60px; margin-bottom: 20px;"></i>
+                <h3 style="color: #333;">Payment Successful!</h3>
+                <p style="color: #666; margin: 15px 0;">We have received your request. Please send the payment screenshot to confirm.</p>
+                
+                <a href="https://wa.me/918884454236?text=Hi, I have just paid. Here is the screenshot." 
+                   target="_blank" class="submit-btn" style="background-color: #25D366; text-decoration: none; display: inline-block;">
+                    <i class="fab fa-whatsapp"></i> Send Screenshot
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
